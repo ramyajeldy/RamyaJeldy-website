@@ -1105,7 +1105,7 @@ const projects = [
     description: 'Email phishing remains a critical security threat with no scalable, intelligent detection layer at the inbox level. Fine-tuned a BERT-based transformer on phishing-email datasets to classify suspicious emails, generating risk labels, confidence scores, and phishing probabilities. Integrated OCR to extract text from image-based phishing attempts. Built and deployed a Gmail Add-on that directly fetches email content for real-time analysis — without accessing or storing any personal Gmail account data, preserving full user privacy. Containerised with Docker and deployed to GCP Cloud Run with CI/CD via GitHub Actions.',
     tech: ['Python', 'BERT', 'Transformers', 'Hugging Face', 'OCR', 'FastAPI', 'Docker', 'GCP Cloud Run', 'GitHub Actions', 'Gmail Add-on API'],
     year: '2026',
-    github: '#',
+    github: 'https://github.com/ramyajeldy/Capstone_V2',
     impact: 'Capstone Project',
   },
   {
@@ -1115,7 +1115,7 @@ const projects = [
     description: 'Investment research is fragmented — stock prices, commodity feeds, analyst PDFs, and web content all live in silos with no intelligent layer to query across them. InvestIQ solves that. Built on a medallion data architecture (Bronze/Silver/Gold) on GCP, it runs a fully automated multi-source ETL pipeline via GitHub Actions, pulling live stock prices from Alpha Vantage, commodity data from Yahoo Finance, analyst PDF reports via PyMuPDF, and web content via BeautifulSoup. At its core, a RAG pipeline powered by Chroma vector search and Gemini 2.5 Flash delivers grounded investment answers with inline citations — no hallucinations, no guesswork. The result is a production-grade React/Vite frontend on Vercel featuring a conversational chatbot, live market dashboard, and asset comparison view, all backed by a FastAPI service running on Google Cloud Run.',
     tech: ['Python', 'FastAPI', 'React', 'Vite', 'Gemini 2.5 Flash', 'Chroma', 'Google Cloud Storage', 'GitHub Actions', 'Vercel', 'PyMuPDF', 'BeautifulSoup'],
     year: '2026',
-    github: '#',
+    github: 'https://github.com/ramyajeldy/InvestIQ',
     impact: 'AI Research Tool',
   },
   {
@@ -1125,7 +1125,7 @@ const projects = [
     description: 'Canadian housing data is publicly available but unstructured — making it difficult for investors to identify high-value opportunities at a glance. Built a Power BI dashboard analysing Canadian housing trends across major metros to surface data-driven investment opportunities. Designed DAX measures and SQL queries to evaluate price-to-rent ratios, affordability indices, and projected ROI by region. Delivered an interactive executive-ready dashboard enabling clear, visual investment decision support.',
     tech: ['Power BI', 'SQL', 'DAX', 'Data Modeling', 'Statistical Analysis', 'Public Datasets'],
     year: '2025',
-    github: '#',
+    github: 'https://github.com/ramyajeldy/MCP_To-do',
     impact: 'Data Analytics POC',
   },
   /* {
@@ -1138,7 +1138,7 @@ const projects = [
     github: '#',
     impact: 'MLops POC',
   },  */
-  {
+  <!-- {
     title: 'Document Q&A System — RAG Pipeline',
     tag: 'AI / LLM',
     tagClass: '',
@@ -1147,17 +1147,8 @@ const projects = [
     year: '2025',
     github: '#',
     impact: 'Hands-on LLM Project',
-  },
-  {
-    title: 'CDW Retail Web Application',
-    tag: 'Enterprise · Web',
-    tagClass: 'industry',
-    description: 'Contributed as individual contributor on a business-critical retail platform for CDW — building React.js + TypeScript UI components, integrating REST APIs, and delivering SQL-driven data insights that informed product decisions.',
-    tech: ['React.js', 'TypeScript', 'REST APIs', 'SQL', 'Azure DevOps', 'Power BI'],
-    year: '2022–2024',
-    github: null,
-    impact: 'Production · Amnet Digital',
-  },
+  }, -->
+
 ];
 
 const blogs = [
@@ -1254,7 +1245,7 @@ function renderProjects() {
       <div class="tech-stack">${p.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}</div>
       <div class="project-links">
         <span class="project-link" style="color:var(--ink-3);cursor:default;">📌 ${p.impact}</span>
-        ${p.github ? `<a href="${p.github}" class="project-link" target="_blank">GitHub ↗</a>` : ''}
+        ${p.github ? `<a href="${p.github}" class="project-link" target="">GitHub ↗</a>` : ''}
       </div>
     </div>
   `).join('');
