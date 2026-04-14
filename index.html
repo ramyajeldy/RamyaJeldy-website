@@ -246,6 +246,7 @@ section{padding:7rem 2rem;}
 
 /* ── EXPERIENCE ── */
 #experience{background:var(--paper);}
+#education{background:#fff;}
 .timeline{position:relative;padding-left:2rem;}
 .timeline::before{
   content:'';position:absolute;left:0;top:0;bottom:0;
@@ -584,6 +585,7 @@ footer strong{color:rgba(255,255,255,0.9);}
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#certifications">Certs</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#blogs">Blog</a></li>
@@ -599,6 +601,7 @@ footer strong{color:rgba(255,255,255,0.9);}
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about" class="mobile-link">About</a>
   <a href="#experience" class="mobile-link">Experience</a>
+  <a href="#education" class="mobile-link">Education</a>
   <a href="#certifications" class="mobile-link">Certifications</a>
   <a href="#projects" class="mobile-link">Projects</a>
   <a href="#blogs" class="mobile-link">Blog</a>
@@ -726,8 +729,8 @@ footer strong{color:rgba(255,255,255,0.9);}
 <section id="experience">
   <div class="container">
     <span class="section-tag">Career Journey</span>
-    <h2 class="section-title">Experience &amp; Education</h2>
-    <p class="section-subtitle">A decade of building, delivering, and bridging — across engineering, agile leadership, and now AI.</p>
+    <h2 class="section-title">Professional Experience</h2>
+    <p class="section-subtitle">A decade of building, delivering, and bridging — across engineering, agile leadership, and product development.</p>
 
     <div class="timeline">
 <!-- 
@@ -837,7 +840,18 @@ footer strong{color:rgba(255,255,255,0.9);}
         </div>
       </div> -->
 
-      <!-- EDUCATION -->
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <span class="section-tag">Education</span>
+    <h2 class="section-title">Academic Background</h2>
+    <p class="section-subtitle">Formal education spanning AI, technology, and engineering — grounding practice in strong academic foundations.</p>
+    <div class="timeline">
+
       <div class="timeline-item">
         <div class="timeline-dot edu"></div>
         <div class="timeline-card">
@@ -864,7 +878,7 @@ footer strong{color:rgba(255,255,255,0.9);}
               <div class="timeline-role">Master of Technology</div>
               <div class="timeline-company">Vellore Institute of Technology</div>
             </div>
-            <!-- <span class="timeline-date">2013 – 2015</span> -->
+            <span class="timeline-date">2013 – 2015</span>
           </div>
           <ul class="timeline-points">
             <li>Postgraduate technology programme building advanced foundations in design, engineering, and applied mechanics.</li>
@@ -880,7 +894,7 @@ footer strong{color:rgba(255,255,255,0.9);}
               <div class="timeline-role">Bachelor of Technology</div>
               <div class="timeline-company">JNTU Hyderabad</div>
             </div>
-            <!-- <span class="timeline-date">2007 – 2011</span> -->
+            <span class="timeline-date">2007 – 2011</span>
           </div>
           <ul class="timeline-points">
             <li>Undergraduate engineering foundation in mechanical engineering, mathematics, and production.</li>
@@ -1318,7 +1332,7 @@ async function handleFormSubmit() {
 
 // ── NAV ACTIVE STATE ──
 function updateActiveNav() {
-  const sections = ['hero','about','experience','certifications','projects','blogs','contact'];
+  const sections = ['hero','about','experience','education','certifications','projects','blogs','contact'];
   const links = document.querySelectorAll('.nav-links a');
   let current = '';
   sections.forEach(id => {
